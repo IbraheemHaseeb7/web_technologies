@@ -1,0 +1,96 @@
+body {
+    background-color: var(--main);
+}
+
+.main-container {
+    height: 60%;
+}
+
+.main-container > h1 {
+    font-size: 4rem;
+}
+
+form {
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    color: var(--white);
+}
+
+form > div {
+    width: 90%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form > div > input, textarea {
+    width: 100%;
+    height: 3rem;
+
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+
+    padding: 0 5px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+form > div > textarea {
+    padding: 5px;
+    resize: vertical;
+}
+
+.btns-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.stories-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.story {
+    width: 90%;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.story > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-direction: column;
+}
