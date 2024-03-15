@@ -4,7 +4,7 @@ let recordToEdit = {};
 function fetchEmployees() {
     $.ajax({
         method: "GET",
-        url: "https://mlsa-learning.azurewebsites.net/api/employees",
+        url: "https://mlsa-learning.azurewebsites.net/api/employees/all",
         success: function (response) {
             let storiesContainer = $(".stories-container");
             employees = response.data;
@@ -41,7 +41,7 @@ function handleSubmit(event) {
 
     $.ajax({
         method: "POST",
-        url: "https://mlsa-learning.azurewebsites.net/api/employees",
+        url: "https://mlsa-learning.azurewebsites.net/api/employees/add",
         data: JSON.stringify({ name: name.val(), age: age.val() }),
         contentType: "application/json",
         success: function (response) {
@@ -63,7 +63,7 @@ function handleDelete(event) {
 
     $.ajax({
         method: "DELETE",
-        url: `https://mlsa-learning.azurewebsites.net/api/employees?id=${id}`,
+        url: `https://mlsa-learning.azurewebsites.net/api/employees/del?id=${id}`,
         success: function () {
             fetchEmployees();
         },
@@ -112,7 +112,7 @@ function handleEditSubmission(event) {
 
     $.ajax({
         method: "PATCH",
-        url: "https://mlsa-learning.azurewebsites.net/api/employees",
+        url: "https://mlsa-learning.azurewebsites.net/api/employees/edit",
         data: JSON.stringify({
             employee_id: recordToEdit.employee_id,
             name: name.val(),
