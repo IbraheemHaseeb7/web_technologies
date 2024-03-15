@@ -42,12 +42,18 @@ function handleSubmit(event) {
     $.ajax({
         method: "POST",
         url: "https://mlsa-learning.azurewebsites.net/api/employees/add",
-        data: JSON.stringify({ name: name.val(), age: age.val() }),
+        data: JSON.stringify({
+            employee_id: 1,
+            name: name.val(),
+            age: age.val(),
+        }),
         contentType: "application/json",
         success: function (response) {
             if (response.message) {
                 name.val("");
                 age.val("");
+
+                fetchEmployees();
             }
         },
         error: function (error) {
