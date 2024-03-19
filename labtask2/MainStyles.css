@@ -6,12 +6,18 @@
 :root {
     --main: #121519;
     --lighter-white: #ffffff05;
+    --gray: rgba(255, 255, 255, 40%);
     --white: rgb(255 255 255 / 90%);
     --accent: #448c74;
     --accent-hover: #448c74c8;
     --biege: #ffffffb3;
     --yellow: #ebc439;
     --red: #eb3939;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--accent);
 }
 
 body {
