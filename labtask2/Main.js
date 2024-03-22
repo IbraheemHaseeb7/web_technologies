@@ -11,3 +11,21 @@ function handleMainContainerHovering(e) {
 }
 
 mainContainer.mousemove(handleMainContainerHovering);
+
+/* Import jQuery */
+$(document).ready(function () {
+    var body = $(document.body);
+    var button = $("svg");
+    var line = $("line");
+
+    button.click(function () {
+        if ($(document.body).hasClass("menu-open")) {
+            $("menu").css({ right: "-100%" })
+            body.removeClass("menu-open");
+            return;
+        }
+        body.addClass("menu-open");
+        $("menu").css({ right: 0 })
+
+    });
+});
