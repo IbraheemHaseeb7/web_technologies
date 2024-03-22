@@ -133,6 +133,7 @@ nav > .sign-up-container {
     font-weight: bolder;
     color: var(--white);
     font-size: 6rem;
+    text-align: center;
 }
 
 .main-container > h1, .main-container > p, .main-container > .hover-down {
@@ -150,6 +151,7 @@ nav > .sign-up-container {
     color: var(--biege);
 
     margin-bottom: 10rem;
+    text-align: center;
 }
 
 .dark-circle {
@@ -271,4 +273,164 @@ nav > .sign-up-container {
 .cc-right > img {
     width: 13rem;
     height: 13rem;
+}
+
+@media screen and (max-width: 968px) {
+
+    .main-container {
+        height: 100vh;
+    }
+
+    .main-container > h1 {
+        font-size: 4rem;
+    }
+
+    .main-container > h1 > img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dark-circle {
+       width: 15rem;
+       height: 15rem; 
+    }
+
+    .content-circle {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .content-circle > img {
+        width: 10rem;
+        height: 8rem;
+    }
+
+    .cc-center {
+        width: 17rem;
+        height: 17rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-container {
+        height: 80vh;
+    }
+
+    .main-container > h1 {
+        font-size: 3rem;
+    }
+
+    .main-container > h1 > img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .main-container > p {
+        font-size: 0.75rem;
+    }
+
+    .dark-circle {
+       width: 10rem;
+       height: 10rem; 
+    }
+
+    .content-circle {
+        width: 10rem;
+        height: 10rem;
+        top: 75%;
+    }
+
+    .content-circle > img {
+        width: 7rem;
+        height: 6rem;
+
+        border-radius: 0.5rem;
+    }
+
+    .main-container > h1, .main-container > p, .main-container > .hover-down {
+        transform: translateY(-1rem);
+    }
+
+    .hover-down::before {
+        height: 3rem;
+        width: 1.5rem;
+    }
+
+    .dc-top-left {
+        top: -5rem;
+    }
+
+    .cc-left {
+        left: 1rem;
+    }
+
+    .cc-right {
+        right: 1rem;
+    }
+
+    .cc-center {
+        width: 12rem;
+        height: 12rem;
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .main-container {
+        height: 70vh;
+    }
+
+    .main-container > h1 {
+        font-size: 2rem;
+    }
+
+    .main-container > h1 > img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .main-container > p {
+        font-size: 0.5rem;
+    }
+
+    .dark-circle {
+       width: 7rem;
+       height: 7rem; 
+    }
+
+    .content-circle {
+        width: 7rem;
+        height: 7rem;
+        top: 75%;
+    }
+
+    .content-circle > img {
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .dc-top-left {
+        top: -3rem;
+    }
+
+    .cc-left {
+        left: 1rem;
+    }
+
+    .cc-right {
+        right: 1rem;
+    }
+
+    .cc-center {
+        width: 8rem;
+        height: 8rem;
+        top: 70%;
+    } 
+    
+    .btn {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
 }

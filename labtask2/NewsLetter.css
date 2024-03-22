@@ -78,3 +78,111 @@
     bottom: 0;
     left: 0;
 }
+
+@media screen and (max-width: 968px) {
+    .newsletter-container > div {
+        width: 90%;
+        height: 80%;
+    }
+
+    .newsletter-container > div > h1 {
+        font-size: 3rem;
+    }
+
+    .newsletter-container > div > p {
+        font-size: 1.2rem;
+    }
+
+    .newsletter-container > div > form > input {
+        width: 20rem;
+        font-size: 1.2rem;
+    }
+
+    .gray-circle {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .green-circle {
+        width: 8rem;
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .newsletter-container {
+        height: 70vh;
+        margin-bottom: 5rem;
+    }
+
+    .newsletter-container > div {
+        width: 90%;
+        height: 90%;
+
+        border-radius: 4rem;
+    }
+
+    .newsletter-container > div > h1 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter-container > div > p {
+        font-size: 1rem;
+    }
+
+    .newsletter-container > div > form > input {
+        width: 15rem;
+        font-size: 1rem;
+    }
+
+    .gray-circle {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .green-circle {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .newsletter-container {
+        height: 50vh;
+    }
+
+    .newsletter-container > div {
+        width: 90%;
+        height: 90%;
+
+        border-radius: 2.5rem;
+    }
+
+    .newsletter-container > div > h1 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-container > div > p {
+        font-size: 0.8rem;
+    }
+
+    .newsletter-container > div > form > input {
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+
+    .gray-circle {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .green-circle {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    form {
+        height: 1rem;        
+    }
+}
