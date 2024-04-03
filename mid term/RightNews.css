@@ -1,0 +1,16 @@
+.right-news {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first > img {
+    width: 90%;
+}
