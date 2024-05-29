@@ -1,0 +1,7 @@
+<link href="/styles/product.css" rel="stylesheet" />
+
+<div class="products-container">
+    <% visitedProducts.forEach((product) => { %>
+        <%- include('products', { product }); %>
+    <% }) %>
+</div>

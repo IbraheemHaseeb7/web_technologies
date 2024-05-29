@@ -1,0 +1,12 @@
+<link href="/styles/product.css" rel="stylesheet" />
+
+<div class="product-container">
+    <h1 onclick="window.location.href = '/products/<%= product._id %>'">
+        <%= product.name %>
+    </h1>
+    <div>
+        <p>Description: <%= product.description %></p>
+        <p>Price: <%= product.price %></p>
+        <p>Category: <%= product.category %></p>
+    </div>
+</div>

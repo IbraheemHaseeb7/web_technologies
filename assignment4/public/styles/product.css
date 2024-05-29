@@ -1,0 +1,28 @@
+.products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.product-container {
+    width: 15rem;
+
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.product-container h1 {
+    cursor: pointer;
+}
+
+.product-container h1:hover {
+    text-decoration: underline;
+}

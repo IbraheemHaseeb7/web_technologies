@@ -1,0 +1,32 @@
+{
+    "name": "mern-term-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.6.8",
+        "bcrypt": "^5.1.1",
+        "body-parser": "^1.20.2",
+        "cloudinary": "^2.2.0",
+        "cookie-parser": "^1.4.6",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.9",
+        "express": "^4.19.1",
+        "express-ejs-layouts": "^2.5.1",
+        "express-session": "^1.18.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.2.3",
+        "socket.io": "^4.7.5"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "supertest": "^6.3.4"
+    }
+}

@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <ul class="cards__list">
+      <li class="card">
+        <div class="card__header">
+          <img class="card__profile-img" src="<%= pictureUri %>" alt="c3po"/>
+        <div class="card__meta">
+          <div data-user-id="<%= userId %>" onclick="handleUsernameClick(event)" class="card__meta__displayname">
+            <%= name %>
+        </div>
+        <div class="card__meta__username">
+        </div>
+        <div class="card__meta__timestamp">
+            <%= timePassed %>
+        </div>
+    </div>
+    <div class="card__menu">
+        <i class="fas fa-ellipsis-h"></i>
+    </div>
+  </div>
+    <div class="card__body">
+            <%= description %>
+        </div>
+        <div class="card__footer">
+          <span class="card__footer__like">
+            <i onclick="handleLike(event)" data-post-id="<%= postId %>" data-has-liked="<%= hasLiked %>" class="<%= hasLiked ? 'fa-solid red-like' : 'fa-regular' %> fa-heart like-btn">
+              <p><%= likesCount %></p></i> 
+          </span>
+          <span class="card__footer__comment">
+            <i onclick="handleComment(event)" data-post-id="<%= postId %>" class="far fa-comment comment-btn"><p><%= commentsCount %></p></i>
+          </span>
+          <span class="card__footer__share">
+            <i class="fas fa-share-alt"></i>
+        </div>
+      </li>
+    </ul>
+</div>

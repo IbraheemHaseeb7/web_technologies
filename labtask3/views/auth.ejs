@@ -1,0 +1,16 @@
+<link href="styles/partials/auth/Form.css" rel="stylesheet" />
+<link href="styles/general.css" rel="stylesheet" />
+<link href="styles/auth.css" rel="stylesheet" />
+
+<div class="main-container">
+    <img
+        onclick="handleLogoClick(event)"
+        class="logo"
+        src="assets/general/bg.png"
+    />
+    <h1><%= title %></h1>
+    <% if (title === "Login") { %> <%- include('partials/auth/LoginForm') %> <%
+    } else { %> <%- include('partials/auth/SignupForm') %> <% } %>
+</div>
+
+<script src="/scripts/auth.js"></script>

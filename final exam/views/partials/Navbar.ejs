@@ -1,0 +1,18 @@
+<% if (user) { %>
+<nav>
+    <div class="image-container">
+        <a href="/">
+            <img src="/assets/general/bg.png" alt="Logo" />
+        </a>
+    </div>
+    <div onclick="handleOpenSideBar(event)" class="burger-container">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <form action="https://google.com/search">
+        <input name="q" type="search" class="search" placeholder="Search" />
+        <button type="submit">Search</button>
+    </form>
+</nav>
+
+<div class="left-container"><%- include('LeftBar') %></div>
+<% } %>

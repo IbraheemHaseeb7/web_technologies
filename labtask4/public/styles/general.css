@@ -1,0 +1,45 @@
+* {
+    font-family: "Calibri", "Trebuchet MS", sans-serif;
+}
+
+:root {
+    --main-theme: #1990ff;
+    --main-theme-hovered: #0080ff;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+
+input:hover,
+input:focus,
+input:active {
+    border: 1px solid rgba(0, 0, 0, 0.76);
+}
+
+button {
+    background-color: var(--main-theme);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--main-theme-hovered);
+}
